@@ -1,3 +1,6 @@
+.footer-wrp{
+	background-color: #ddd;
+}
 .ftr-inner {
     display: flex;
     padding-top:50px;
@@ -15,4 +18,20 @@
 .ftr-rgt {
     max-width: 80%;
     width: 100%;
+}
+.ftr-tel a{
+	font-family: 'Museo-Sans-900';
+	font-size:18px;
+	line-height:1.33;
+}
+.ftr-tel a,
+.ftr-email a,
+.ftr-addr a{
+	color:#fff;
+}
+.ftr-email a,
+.ftr-addr a{
+	font-family: 'Museo-Sans-300';
+	font-size:16px;
+	line-height:1.875;
 }
