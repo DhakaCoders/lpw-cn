@@ -273,6 +273,21 @@ $(".dft-fl-btn" ).each(function( index ) {
 });
 
 
+
+
+/*start of Noyon*/
+
+
+
+/*start of Niaz*/
+
+
+
+/*start of keshob*/
+
+
+
+
 new WOW().init();
 
 })(jQuery);
