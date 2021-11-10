@@ -55,8 +55,10 @@
 
 </head>
 <body>
-<header class="header">
-  <div class="container">
+<div class="page-body-cntlr">
+  <div class="bdoverlay"></div>
+  <header class="header">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="header-inr clearfix">
@@ -66,26 +68,131 @@
               </div>
             </div>
             <div class="hdr-rgt">
-              <nav class="main-nav">
-                <ul class="clearfix reset-list">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </nav>
+              <div class="hamburger-cntlr show-sm">
+                <div class="hamburger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="hdr-topbar">
+                <div class="hdr-details-cntlr hide-sm">
+                  <div class="hdr-details ">
+                    <div class="hdr-mail hdr-details-col">
+                      <a href="mailto:info@mbcivil.com">
+                        <i><svg class="mail-icon" width="19" height="15" viewBox="0 0 19 15" fill="#fff">
+                          <use xlink:href="#mail-icon"></use></svg>
+                        </i>
+                      </a>
+                    </div>
+                    <div class="hdr-tel hdr-details-col">
+                      <a href="tel:+61882666650">
+                        <span>+61 8 8266 6650</span>
+                        <i><svg class="phone-icon" width="16.186" height="16.186" viewBox="0 0 16.186 16.186" fill="#fff">
+                          <use xlink:href="#phone-icon"></use></svg>
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hdr-menu hide-sm">
+                <nav class="main-nav">
+                  <ul class="clearfix reset-list">
+                    <li class="current-menu-item"><a href="#">Home</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Nav 1</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">submenu 1</a></li>
+                        <li><a href="#">submenu 2</a></li>
+                        <li><a href="#">submenu 3</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Nav 2</a></li>
+                    <li><a href="#">Nav 3</a></li>
+                    <li><a href="#">Nav 4</a></li>
+                    <li><a href="#">Nav 5</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
-</header>
+    </div>
+  </header>
 
-<section class="main-content">
-  <div class="container">
+  <div class="xs-mobile-menu">
+
+    <div class="xs-mbl-hdr">
+      <div class="hdr-lft">
+        <div class="logo">
+          <a href="#"><img src="assets/images/logo.png"></a>
+        </div>
+      </div>
+      <div class="hdr-rgt">
+        <div class="hamburger-cntlr show-sm">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="xs-menu">
+      <nav class="main-nav">
+        <ul class="clearfix reset-list">
+          <li class="current-menu-item"><a href="#">ABOUT US</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">SERVICES</a>
+            <ul class="sub-menu">
+              <li><a href="#">submenu 1</a></li>
+              <li><a href="#">submenu 2</a></li>
+              <li><a href="#">submenu 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CASE STUDIES</a></li>
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="xs-mbl-btm">
+      <div class="hdr-details ">
+        <div class="hdr-mail hdr-details-col">
+          <a href="mailto:info@mbcivil.com">
+            <i><svg class="mail-icon" width="19" height="15" viewBox="0 0 19 15" fill="#fff">
+              <use xlink:href="#mail-icon"></use></svg>
+            </i>
+          </a>
+        </div>
+        <div class="hdr-tel hdr-details-col">
+          <a href="tel:+61882666650">
+            <span>+61 8 8266 6650</span>
+            <i><svg class="phone-icon" width="16.186" height="16.186" viewBox="0 0 16.186 16.186" fill="#fff">
+              <use xlink:href="#phone-icon"></use></svg>
+            </i>
+          </a>
+        </div>
+      </div>
+      <div class="xs-mbl-cntlr">
+        <div class="xs-mbl-socials">
+          <ul class="reset-list">
+            <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-content">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
 
@@ -94,24 +201,26 @@
 
         </div>
       </div>
-  </div>    
-</section>
+    </div>    
+  </section>
 
-<ol>
-  <li class="facebook"><a href="#"></a></li>
-</ol>
+  <ol>
+    <li class="facebook"><a href="#"></a></li>
+  </ol>
 
-<footer class="footer-wrp">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
+  <footer class="footer-wrp">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
           <div class="ftr-col">
             <div></div>
           </div>
+        </div>
       </div>
-    </div>
-  </div> 
-</footer>
+    </div> 
+  </footer>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
