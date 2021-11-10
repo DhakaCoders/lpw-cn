@@ -1,5 +1,5 @@
 .footer-wrp{
-	background-color: #ddd;
+	position: relative;
 }
 .ftr-inner {
     display: flex;
@@ -13,25 +13,119 @@
 .ftr-left {
     max-width: 20%;
     width: 100%;
+    margin-bottom:184px;
 }
 
 .ftr-rgt {
     max-width: 80%;
     width: 100%;
+    padding-left:218px;
+    padding-top:113px;
+}
+.ftr-tel{
+	margin-bottom:20px;
 }
 .ftr-tel a{
 	font-family: 'Museo-Sans-900';
 	font-size:18px;
 	line-height:1.33;
 }
+.ftr-email-title{
+	font-size:16px;
+	font-family: 'Museo-Sans-700';
+	line-height:1.33;
+	margin-bottom:0;
+}
 .ftr-tel a,
 .ftr-email a,
-.ftr-addr a{
+.ftr-addr a,
+.ftr-email-title,
+.ftr-copyright p,
+.ftr-developed-by p,
+.ftr-developed-by p a,
+.ftr-btm-menu ul li a{
 	color:#fff;
+}
+
+.ftr-tel a:hover,
+.ftr-email a:hover,
+.ftr-addr a:hover,
+.ftr-developed-by p a:hover,
+.ftr-btm-menu ul li a:hover{
+	color:#FB5E24;
 }
 .ftr-email a,
 .ftr-addr a{
 	font-family: 'Museo-Sans-300';
 	font-size:16px;
 	line-height:1.875;
+}
+.ftr-top-details{
+	margin-bottom:33px;
+}
+.ftr-top-social ul{
+	display: flex;
+	margin:0 -8px;
+}
+.ftr-top-social ul li{
+	padding:0 8px;
+}
+.ftr-top-cntlr{
+	padding-bottom:44px;
+	border-bottom: 1px solid #fff;
+}
+.ftr-btm-cntlr{
+	display: flex;
+	padding:24px 0;
+}
+.ftr-copyright p,
+.ftr-developed-by p,
+.ftr-developed-by p a,
+.ftr-btm-menu ul li a{
+	margin-bottom:0;
+	font-size:16px;
+}
+.ftr-copyright{
+	padding-right:12px;
+}
+.ftr-developed-by p a{
+	font-family: 'Museo-Sans-700';
+}
+.ftr-developed-by {
+    margin-left: auto;
+}
+.ftr-btm-menu ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -6px;
+}
+.ftr-btm-menu ul li{
+	padding:0px 6px;
+}
+.ftr-btm-menu ul li a{
+	line-height:1.7;
+}
+.ftr-top-social ul li a,
+.ftr-top-social ul li a i{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.ftr-btm-menu ul li:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(50%,-50%);
+    height: 16px;
+    width: 2px;
+    background: #fff;
+}
+.ftr-background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
