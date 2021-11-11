@@ -125,8 +125,8 @@
 	padding-top: 10px;
 }
 .mbc-fullwidth-txt-module{
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 .mbc-fullwidth-txt-module h1,
 .mbc-fullwidth-txt-module h2,
@@ -159,26 +159,33 @@
 
 
 
-.mbc-fullwidth-txt-module-white-black{
-	background: #010203;
+.mbc-fullwidth-txt-module-white-red{
+	background: #FB5E24;
 }
-.mbc-fullwidth-txt-module-white-blue{
-	background: #405D6F;
+.mbc-fullwidth-txt-module-white-green{
+	background: #30B271;
 }
 .mbc-fullwidth-txt-module-light-gray-bg{
-	background: #EAEBEC;
+	background: #CBCBCB;
 }
-.mbc-fullwidth-txt-module-white-dark-gray-bg{
-	background: #716A6A;
+.mbc-fullwidth-txt-module-blue-bg{
+	background: #3D268A;
 }
-.mbc-fullwidth-txt-module-white-black,
+.mbc-fullwidth-txt-module-blue-bg,
+.mbc-fullwidth-txt-module-blue-bg h1,
+.mbc-fullwidth-txt-module-blue-bg h2,
+.mbc-fullwidth-txt-module-blue-bg h3,
+.mbc-fullwidth-txt-module-blue-bg h4,
+.mbc-fullwidth-txt-module-blue-bg h5,
+.mbc-fullwidth-txt-module-blue-bg h6,
+.mbc-fullwidth-txt-module-white-red,
 .mbc-fullwidth-txt-module-white-green,
-.mbc-fullwidth-txt-module-white-black h1,
-.mbc-fullwidth-txt-module-white-black h2,
-.mbc-fullwidth-txt-module-white-black h3,
-.mbc-fullwidth-txt-module-white-black h4,
-.mbc-fullwidth-txt-module-white-black h5,
-.mbc-fullwidth-txt-module-white-black h6,
+.mbc-fullwidth-txt-module-white-red h1,
+.mbc-fullwidth-txt-module-white-red h2,
+.mbc-fullwidth-txt-module-white-red h3,
+.mbc-fullwidth-txt-module-white-red h4,
+.mbc-fullwidth-txt-module-white-red h5,
+.mbc-fullwidth-txt-module-white-red h6,
 .mbc-fullwidth-txt-module-white-green h1,
 .mbc-fullwidth-txt-module-white-green h2,
 .mbc-fullwidth-txt-module-white-green h3,
@@ -376,8 +383,8 @@ ol li::before {
 
 @media(max-width: 1699px){
 	.mbc-fullwidth-txt-module {
-	    padding-top: 50px;
-	    padding-bottom: 50px;
+	    padding-top: 90px;
+	    padding-bottom: 90px;
 	}
 	.mbc-fullwidth-txt-module h4 {
 	    margin-bottom: 30px!important;
@@ -537,16 +544,15 @@ ol li::before {
 		padding: 2px 0 10px 30px;
 	}
 	.page-bnr-cntlr{
-		height: 500px;
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	.pageBnrSlider.slick-slider ul.slick-dots{
 		bottom: 30px;
 	}
 	.mbc-fullwidth-txt-module {
-	    padding-top: 40px;
-	    padding-bottom: 40px;
+	    padding-top: 70px;
+	    padding-bottom: 70px;
 	}
 	.mbc-fullwidth-txt-module-white-dark-gray-bg .mbc-grid-item h4 {
 	    padding-top: 20px;
