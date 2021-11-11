@@ -142,14 +142,15 @@
 
 
 .mbc-team-sec{
-	background: #405D6F;
+	background: #FB5E24;
 	padding: 180px 0 140px;
 }
 
 .mbc-team-sec .mbc-grids-sec-entry-hdr-title{
 	text-transform: capitalize;
 	text-align: center;
-	color: #B0ACAC;
+	color: #ffffff;
+	font-family: 'Museo-Sans-300';
 }
 .mbc-team-subtitle{
 	text-align: center;
@@ -197,11 +198,12 @@
 	color: #fff;
 }
 .mbc-team-grd-des-title{
-	margin-bottom: 10px;
+	margin-bottom: 0;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	color: #fff!important;
+	font-family: 'Museo-Sans-500';
 }
 .mbc-team-grd-des-title:hover{
 	opacity: 0.7;
@@ -212,7 +214,7 @@
 .mbc-team-grd-item-des strong{
 	display: inline-block;
 	vertical-align: baseline;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 	color: #fff;
 }
 .mbc-grid-item-inr p{
@@ -417,14 +419,14 @@ Gallery design
 
 
 .mbc-grid-item-img{
-	height: 350px;
+	height: 300px;
 }
 .mbc-grid-item-img img{
 	display: none;
 }
 
 .mbc-grd-item-img-columns2{
-	height: 400px;
+	height: 335px;
 }
 
 
@@ -507,6 +509,7 @@ Gallery design
 }
 .mbc-opb-slider-title{
 	color: #fff;
+	font-family: 'Museo-Sans-300';
 }
 .mbc-opb-slider-grd-item-des{
 	text-align: center;
@@ -541,10 +544,6 @@ Gallery design
 	padding-bottom: 80px;
 	/*background: #CBCBCB;
 */}
-.mbc-btn-sec-inr{
-	display: flex;
-	align-items: center;
-}
 .mbc-prev-nxt-ctlr{
 	margin-left: auto;
 }
@@ -655,8 +654,13 @@ Gallery design
 .general-content-ctr .full-width-img-bleed-sec-rows-cntlr ul li:nth-child(2n+2) .full-width-des-subtitle{
 	color: #fff;
 }
-
-
+.mbc-columns-2 .mbc-grids-col-entry-hdr{
+	padding-top: 45px;
+}
+.mbc-team-slider-btn-ctlr{
+	text-align: center;
+	padding-top: 55px;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
@@ -784,6 +788,9 @@ Gallery design
 	.mbc-grid-item-inr p{
 		margin-bottom: 30px;
 	}
+	.mbc-columns-2 .mbc-grids-col-entry-hdr{
+		padding-top: 35px;
+	}
 	
 }
 
@@ -873,6 +880,9 @@ Gallery design
 	.mbc-grid-item-inr p{
 		margin-bottom: 25px;
 	}
+	.mbc-columns-2 .mbc-grids-col-entry-hdr{
+		padding-top: 25px;
+	}
 }
 @media(max-width: 991px){
 	.mbc-text-slider-ctlr {
@@ -951,6 +961,9 @@ Gallery design
 	}
 	.mbc-grid-item-inr p{
 		margin-bottom: 20px;
+	}
+	.mbc-columns-2 .mbc-grids-col-entry-hdr{
+		padding-top: 15px;
 	}
 
 }
@@ -1136,7 +1149,7 @@ Gallery design
 	    min-width: 100%;
 	}
 	.mbc-grd-item-img-columns2 {
-	    height: 350px;
+	    height: 315px;
 	}
 }
 

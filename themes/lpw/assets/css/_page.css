@@ -113,7 +113,7 @@
 	padding-bottom: 1px;
 }
 .mbc-grids-sec-entry-hdr-title{
-	margin-bottom: 40px!important;
+	margin-bottom: 54px!important;
 	text-transform: uppercase;
 	font-family: 'Museo-Sans-900';
 }
@@ -391,7 +391,7 @@ ol li::before {
 	    padding-bottom: 50px;
 	}
 	.mbc-grids-sec-entry-hdr-title {
-	    margin-bottom: 30px!important;
+	    margin-bottom: 40px!important;
 	}
 	
 	.mbc-grids-col-entry-hdr-title {
@@ -469,6 +469,9 @@ ol li::before {
 	.mbc-fullwidth-txt-module-white-dark-gray-bg .mbc-grid-item h4 {
 	    padding-top: 30px;
 	    margin-bottom: 20px;
+	}
+	.mbc-grids-sec-entry-hdr-title {
+	    margin-bottom: 30px!important;
 	}
 }
 @media(max-width: 991px){
