@@ -136,7 +136,10 @@
     right: 0;
     bottom: 0;
 }
-
+.ftr-grn-bg{
+    height: 723px;
+    width: 1368px;
+}
 /*hr-desing*/
 
 .hr-color-black,
@@ -176,4 +179,12 @@
 	transform: translateY(-50%);
 	left: 23px;
 	right: 23px;
+}
+
+@media(max-width:){
+	.ftr-grn-bg.inline-bg {
+	    height: 625px;
+	    width: 1168px;
+	    background-position: left 51px bottom 0px!important;
+	}
 }
