@@ -267,7 +267,14 @@ $(".dft-fl-btn" ).each(function( index ) {
 
 
 /*start of Noyon*/
-
+if(windowWidth <=1199){
+    if( $('li.menu-item-has-children').length ){
+      $('li.menu-item-has-children').click(function(){
+       $(this).find('.sub-menu').slideToggle(300);
+       $(this).toggleClass('this-sub-menu-active');
+     });
+    }
+}
 
 
 /*start of Niaz*/
