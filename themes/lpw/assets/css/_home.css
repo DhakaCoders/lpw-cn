@@ -121,6 +121,7 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	position: relative;
 }
 .cmnuty-srvcs-item-img{
 	display: flex;
@@ -131,6 +132,7 @@
 	background: #fff;
 	margin-bottom: 30px;
 	border-radius: 50% 50%;
+	position: relative;
 }
 .cmnuty-srvcs-item-img img{
 	display: inline-block;
@@ -144,6 +146,13 @@
 	color: #fff;
 	text-align: center;
 	margin-bottom: 17px;
+}
+.cmnuty-srvcs-item-title a{
+	display: inline-block;
+	color: #fff;
+}
+.cmnuty-srvcs-item-title a:hover{
+	opacity: 0.8;
 }
 .cmnuty-srvcs-item-desc p{
 	color: #fff;
