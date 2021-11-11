@@ -125,8 +125,8 @@
 	padding-top: 10px;
 }
 .mbc-fullwidth-txt-module{
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 .mbc-fullwidth-txt-module h1,
 .mbc-fullwidth-txt-module h2,
@@ -383,8 +383,8 @@ ol li::before {
 
 @media(max-width: 1699px){
 	.mbc-fullwidth-txt-module {
-	    padding-top: 50px;
-	    padding-bottom: 50px;
+	    padding-top: 90px;
+	    padding-bottom: 90px;
 	}
 	.mbc-fullwidth-txt-module h4 {
 	    margin-bottom: 30px!important;
@@ -551,8 +551,8 @@ ol li::before {
 		bottom: 30px;
 	}
 	.mbc-fullwidth-txt-module {
-	    padding-top: 40px;
-	    padding-bottom: 40px;
+	    padding-top: 70px;
+	    padding-bottom: 70px;
 	}
 	.mbc-fullwidth-txt-module-white-dark-gray-bg .mbc-grid-item h4 {
 	    padding-top: 20px;
