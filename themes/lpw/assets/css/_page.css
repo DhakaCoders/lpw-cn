@@ -271,36 +271,36 @@ ol li::before {
 
 
 /*page banner*/
-.page-banner{
-	position: relative;
-	overflow: hidden;
+.page-banner {
+    position: relative;
+    overflow: hidden;
 }
-.page-banner-bg-black{
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	z-index: 1;
-	background: #000;
+.page-banner-bg-black {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #000;
 }
-.page-bnr-bg{
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	z-index: 2;
+.page-bnr-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
 }
-.page-bnr-cntlr{
-	position: relative;
-	z-index: 3;
-	text-align: center;
-	padding-top: 20px;
-	height: 540px;
-	padding-bottom: 20px;
-	display: flex;
-	align-items: center;
+.page-bnr-cntlr {
+    position: relative;
+    z-index: 3;
+    height: 423px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 .fl-h1.page-bnr-title{
 	color: #fff;
@@ -311,7 +311,7 @@ ol li::before {
 /*bredcumb*/
 .breadcrumb-sec {
     padding: 33px 0 24px;
-    border-bottom: 2px solid #b7b7b7;
+    border-bottom: 2px solid #b8b8b8;
 }
 .breadcrumb-sec-inr ul {
     display: flex;
@@ -332,7 +332,7 @@ ol li::before {
 .breadcrumb-sec-inr ul li a span {
     display: inline-block;
     vertical-align: baseline;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     color: #716A6A;
     text-decoration: none;
@@ -346,7 +346,7 @@ ol li::before {
 .breadcrumb-sec-inr ul li.active a,
 .breadcrumb-sec-inr ul li a span:hover,
 .breadcrumb-sec-inr ul li a:hover{
-	color: #EC1218;
+	color: #FB5E24;
 }
 .breadcrumb-sec-inr ul li:after {
     position: absolute;
