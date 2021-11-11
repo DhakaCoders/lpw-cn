@@ -70,9 +70,6 @@
     color: #FFFFFF;
     border-color: #FFFFFF;
 }
-.full-width-des-innr a:hover{
-    border-color: #48484A;
-}
 .full-width-img-bleed-sec-rows-cntlr ul li:nth-child(2n+2){
     background: #3D268A;
 }
