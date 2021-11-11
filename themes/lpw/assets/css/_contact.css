@@ -3,23 +3,23 @@
     width: 100%;
     margin: 0 auto;
 }
-.contact-form-title-cntlr {
+.sec-entry-header {
     text-align: center;
 }
-.contact-form-sub-title{
+.sec-entry-header{
     color: #30B271;
     margin-bottom: 55px;
 }
-.contact-form-title-cntlr p{
+.sec-entry-header p{
     font-size: 20px;
     font-family: 'Museo-Sans-300';
     margin-bottom: 30px;
 }
-.contact-form-title-cntlr p a{
+.sec-entry-header p a{
     font-family: 'Museo-Sans-700';
     color: #3D268A;
 }
-.contact-form-title-cntlr p a:hover{
+.sec-entry-header p a:hover{
     color: #30B271;
 }
 
