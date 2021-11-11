@@ -141,11 +141,12 @@
 }
 .ftr-grn-bg{
     height: 715px;
-    width:70.31%;
     position: absolute;
     right:0;
     bottom:0;
-    background-size:100% 100%!important;
+    width: 67%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 /*hr-desing*/
 
@@ -189,18 +190,14 @@
 }
 
 @media(max-width:1699px){
-	.ftr-rgt{
-		padding-left: 160px;
+	.ftr-grn-bg{
+		width: 71%;
 	}
 	/*header,.hr-sec{
 		overflow:hidden;
 	}*/
 }
 @media(max-width:1499px){
-	.ftr-grn-bg{
-		height:700px;
-		width:72.31%;
-	}
 	.ftr-top-details{
 		margin-bottom:28px;
 	}
@@ -211,27 +208,32 @@
     	margin-bottom: 15px;
 	}
 }
+@media(max-width:1399px){
+	.ftr-grn-bg {
+	    width: 77%;
+	}
+}
+
 @media(max-width:991px){
 	.ftr-left {
 	    max-width: 100%;
 	    margin-bottom: 0;
 	}
-	.ftr-grn-bg{
-		height:820px;
-	}
 	.ftr-rgt {
 	    max-width: 100%;
 	    padding-left: 0;
-	    padding-top: 60px;
+	    padding-top: 75px;
 	}
-
+	.ftr-grn-bg.ftr-grn-bg2{
+		background-position: center top;
+		height: 838px;
+	}
 	.ftr-logo {
 	    text-align: center;
 	}
 
 	.ftr-grn-bg {
 	    width: 100%;
-	    background-position: left 80px bottom 0px!important;
 	}
 
 	.ftr-top-cntlr {
@@ -259,9 +261,6 @@
 	.ftr-logo a{
 		max-width:170px;
 	}
-	.ftr-grn-bg {
-	    background-position: left 60px bottom 0px!important;
-	}
 	.ftr-top-details {
     	margin-bottom: 18px;
 	}
@@ -269,13 +268,10 @@
     	padding-bottom: 25px;
 	}
 	.ftr-rgt {
-	    padding-top: 75px;
+	    padding-top: 95px;
 	}
 }
 @media(max-width:575px){
-	.ftr-grn-bg {
-	    background-position: left 49px bottom 0px!important;
-	}
 	.ftr-email a, 
 	.ftr-addr a,
 	.ftr-copyright p, 
@@ -293,21 +289,22 @@
 	.ftr-tel a{
 		font-size:17px;
 	}
-	.ftr-grn-bg{
-		height: 710px;
+	.ftr-rgt {
+    	padding-top: 125px;
+	}
+	.ftr-grn-bg.ftr-grn-bg2 {
+	    height: 815px;
 	}
 }
 @media(max-width:479px){
 	.ftr-logo a {
-    	max-width: 120px;
+    	max-width: 150px;
 	}
-	.ftr-grn-bg{
-		height: 680px;
+	.ftr-grn-bg.ftr-grn-bg2 {
+	    height: 790px;
 	}
 	.ftr-rgt {
 	    padding-top: 77px;
 	}
-	.ftr-grn-bg {
-	    background-position: left 32px bottom 0px!important;
-	}
+
 }
