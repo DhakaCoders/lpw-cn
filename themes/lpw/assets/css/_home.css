@@ -71,6 +71,67 @@
 	color: #fff;
 	margin-bottom: 45px;
 }
+.hm-bnr-desc-btn .fl-white-btn.fl-btn:hover{
+	border-color: #fff;
+	color: #fff;
+}
 
 
 
+/*community-services-sec*/
+.community-services-sec{
+	padding-top: 90px;
+	background: #fa5e25;
+}
+.cmnuty-srvcs-entry-header .sec-entry-header-title{
+	color: #fff;
+}
+.cmnuty-srvcs-entry-header.sec-entry-header p{
+	color: #fff;
+}
+.cmnuty-srvcs-grid{
+	margin: 0 -35px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.cmnuty-srvcs-item-cntlr{
+	padding: 0 35px;
+	width: 25%;
+	margin-bottom: 40px;
+}
+.cmnuty-srvcs-item{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.cmnuty-srvcs-item-img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 161px;
+	height: 161px;
+	background: #fff;
+	margin-bottom: 30px;
+	border-radius: 50% 50%;
+}
+.cmnuty-srvcs-item-img img{
+	display: inline-block;
+	max-height: 78px;
+	width: auto;
+}
+.cmnuty-srvcs-item-desc-cntlr{
+	padding: 0 5px;
+}
+.cmnuty-srvcs-item-title{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 17px;
+}
+.cmnuty-srvcs-item-desc p{
+	color: #fff;
+	text-align: center;
+}
+.cmnuty-srvcs-item-desc p:last-of-type{
+	margin-bottom: 0;
+}
