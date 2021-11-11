@@ -59,8 +59,9 @@
 .ftr-email a:hover,
 .ftr-addr a:hover,
 .ftr-developed-by p a:hover,
-.ftr-btm-menu ul li a:hover{
-	color:#FB5E24;
+.ftr-btm-menu ul li a:hover,
+.ftr-top-social ul li a i:hover svg{
+	opacity: 0.8;
 }
 .ftr-email a,
 .ftr-addr a{
@@ -74,6 +75,7 @@
 .ftr-top-social ul{
 	display: flex;
 	margin:0 -8px;
+	flex-wrap: wrap;
 }
 .ftr-top-social ul li{
 	padding:0 8px;
