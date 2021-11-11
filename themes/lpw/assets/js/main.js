@@ -14,15 +14,6 @@ if( $('.hamburger-cntlr').length ){
     $('body').toggleClass('allWork');
   });
 }
-if(windowWidth <=767){
-    if( $('li.menu-item-has-children > a').length ){
-      $('li.menu-item-has-children > a').click(function(e){
-       event.preventDefault();
-       $(this).next().slideToggle(300);
-       $(this).parent().toggleClass('sub-menu-arrow');
-     });
-    }
-}
 	
 if($("ul.slick-dots li").length == 1){
    $("ul.slick-dots").hide();
@@ -79,7 +70,7 @@ $(window).load(function() {
 //banner animation
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-  $('.page-banner-bg').css({
+  $('.page-bnr-bg').css({
     '-webkit-transform' : 'scale(' + (1 + scroll/2000) + ')',
     '-moz-transform'    : 'scale(' + (1 + scroll/2000) + ')',
     '-ms-transform'     : 'scale(' + (1 + scroll/2000) + ')',
