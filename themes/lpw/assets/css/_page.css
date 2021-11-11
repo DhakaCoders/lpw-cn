@@ -115,7 +115,7 @@
 .mbc-grids-sec-entry-hdr-title{
 	margin-bottom: 40px!important;
 	text-transform: uppercase;
-	font-family: 'Museo-Sans-500';
+	font-family: 'Museo-Sans-900';
 }
 .mbc-grids-col-entry-hdr-title{
 	margin-bottom: 40px!important;
@@ -568,6 +568,10 @@ ol li::before {
 	}
 	.default-page-con ul li, ul li{
 		padding: 2px 0 10px 22px;
+	}
+	.mbc-fullwidth-txt-module {
+	    padding-top: 50px;
+	    padding-bottom: 50px;
 	}
 	
 }
