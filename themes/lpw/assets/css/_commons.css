@@ -235,7 +235,7 @@ ul.ab-top-menu li:before,
 	color: #FFFFFF;
 	background: #FB5E24;
 	font-size: 12px;
-	font-family: 'Museo-Sans-900';
+	font-family: 'Museo-Sans-500';
 	line-height: 1.1;
 	text-align: center;
 	padding: 13px 13px 12px;
@@ -277,12 +277,12 @@ ul.ab-top-menu li:before,
 	background: transparent;
 	color: #000000;
 }
-.fl-black-btn{
+.fl-white-btn{
 	background: #ffffff;
 	border: 1px solid #ffffff;
 	color: #FB5E24;
 }
-.fl-black-btn:hover{
+.fl-white-btn:hover{
 	background: transparent;
 	border: 1px solid #FB5E24;
 }
