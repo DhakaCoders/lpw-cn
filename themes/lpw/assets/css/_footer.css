@@ -4,6 +4,7 @@
 .ftr-inner {
     display: flex;
     padding-top:50px;
+    flex-wrap: wrap;
 }
 .ftr-logo a{
 	display: inline-block;
@@ -209,4 +210,33 @@
 	.ftr-tel {
     	margin-bottom: 15px;
 	}
+}
+@media(max-width:991px){
+	.ftr-left {
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.ftr-rgt {
+    max-width: 100%;
+    padding-left: 0;
+    padding-top: 36px;
+}
+
+.ftr-logo {
+    text-align: center;
+}
+
+.ftr-grn-bg {
+    width: 80%;
+    background-position: left 125px bottom 0px!important;
+}
+
+.ftr-top-cntlr {
+    text-align: center;
+}
+
+.ftr-top-social ul {
+    justify-content: center;
+}
 }
