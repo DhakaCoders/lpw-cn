@@ -290,6 +290,106 @@ if( $('.wpforms-error').length ){
   });
 }
 
+if( $('.mbcOpbSlider').length ){
+      $('.mbcOpbSlider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.mbc-option-break-option-break-slider-ctlr .mbc-slider-prev-nxt .mbc-prev'),
+        nextArrow: $('.mbc-option-break-option-break-slider-ctlr .mbc-slider-prev-nxt .mbc-nxt'),
+      });
+    }
+
+    if( $('.mbcTextSlider').length ){
+      $('.mbcTextSlider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.mbc-text-slider .mbc-slider-prev-nxt .mbc-prev'),
+        nextArrow: $('.mbc-text-slider .mbc-slider-prev-nxt .mbc-nxt'),
+      });
+    }
+    if( $('.mbcTeamSlider').length ){
+      $('.mbcTeamSlider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: $('.mbc-team-slider-ctlr .mbc-slider-prev-nxt .mbc-prev'),
+        nextArrow: $('.mbc-team-slider-ctlr .mbc-slider-prev-nxt .mbc-nxt'),
+        responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+      });
+    }
+
+    $('.mbc-accordion-title').on('click', function(){
+      $(this).toggleClass('active');
+      $(this).parents('.mbc-accordion-menu').siblings().find('.mbc-accordion-title').removeClass('active');
+      $(this).parents('.mbc-accordion-menu').find('.mbc-accordion-des').slideToggle(300);
+      $(this).parents('.mbc-accordion-menu').siblings().find('.mbc-accordion-des').slideUp(300);
+    });
+
+     $('.hm-chose-us-btn ul li a').click(function(e){
+      e.preventDefault();
+      var tagid = $(this).data('tag');
+      $('.hm-chose-us-btn ul li a').removeClass('current');
+      $('.hm-chose-us-con').removeClass('current');
+      $(this).addClass('current');
+      $('#'+tagid).addClass('current');
+    });
+
+
+/*     if($('.count').length){
+      $('.count').counterUp({
+          delay: 10,
+          time: 3000
+      });
+     }*/
+    if($('.counter').length){
+      $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+      });
+    }
+
 
 new WOW().init();
 
