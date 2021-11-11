@@ -298,10 +298,10 @@
 }
 @media(max-width:479px){
 	.ftr-logo a {
-    	max-width: 120px;
+    	max-width: 150px;
 	}
-	.ftr-grn-bg{
-		height: 680px;
+	.ftr-grn-bg.ftr-grn-bg2 {
+	    height: 790px;
 	}
 	.ftr-rgt {
 	    padding-top: 77px;
