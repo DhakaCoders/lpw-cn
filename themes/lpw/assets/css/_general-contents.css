@@ -30,6 +30,9 @@
 	background-repeat: no-repeat!important;
 	height: 17px;
 	width: 15px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .mbc-text-slider .mbc-prev:hover{
 	background: url('../images/prev-red-hover.png');
@@ -46,6 +49,9 @@
 	background-repeat: no-repeat!important;
 	height: 17px;
 	width: 15px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .mbc-text-slider .mbc-nxt:hover{
 	background: url('../images/nxt-red-hover.png');
@@ -110,9 +116,6 @@
     background-position: center center!important;
     height: 16px;
     width: 17px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -ms-transition: all 0.5s;
 }
 .mbc-accordion-title.active:after{
     background: url(../images/down-arrow-active.png);
