@@ -192,9 +192,9 @@
 	.ftr-rgt{
 		padding-left: 160px;
 	}
-	header,.hr-sec{
+	/*header,.hr-sec{
 		overflow:hidden;
-	}
+	}*/
 }
 @media(max-width:1499px){
 	.ftr-grn-bg{
