@@ -96,7 +96,7 @@
 	border-bottom-width: 1px;
 	border-color: #E5E5E5;
 	background: #E5E5E5;
-	color: #fff;
+	color: #000;
 	border-radius: 35px;
 }
 .mbc-accordion-menu:last-child .mbc-accordion-title{
@@ -665,16 +665,16 @@ Gallery design
 	text-align: center;
 	padding-top: 55px;
 }
+.mbc-team-slider-btn-ctlr a:hover{
+	border-color: #3D268A;
+	background: #3D268A;
+}
 .pd-top{
 	padding-top: 170px;
 }
 .mbc-gallery-btn-cntlr,
 .mbc-client-btn-cntlr{
 	text-align: center;
-}
-.mbc-client-btn-cntlr .fl-btn.fl-white-transparent-btn:hover{
-	color: #FB5E24;
-	border-color: #FB5E24;
 }
 .mbc-gallery-btn-cntlr{
 	padding-top: 70px;

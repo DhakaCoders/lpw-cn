@@ -303,18 +303,16 @@ ul.ab-top-menu li:before,
 	border-color: #fff;
 	color: #fff;
 }
-.fl-white-transparent-btn:hover{
-	border-color: #000000;
-	color: #000000;
-}
 .fl-black-transparent-btn{
 	background: transparent;
 	border-color: #000;
 	color: #000;
 }
+.fl-white-transparent-btn:hover,
 .fl-black-transparent-btn:hover{
 	border-color: #FB5E24;
-	color: #FB5E24;
+	background: #FB5E24;
+	color: #fff;
 }
 .dft-fl-btn{
 	display: inline-block;
