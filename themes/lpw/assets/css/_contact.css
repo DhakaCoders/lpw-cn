@@ -5,6 +5,7 @@
 }
 .sec-entry-header {
     text-align: center;
+    margin-bottom: 30px;
 }
 .sec-entry-header-title{
     color: #30B271;
@@ -13,7 +14,9 @@
 .sec-entry-header p{
     font-size: 20px;
     font-family: 'Museo-Sans-300';
-    margin-bottom: 30px;
+}
+.sec-entry-header p:last-child{
+    margin-bottom: 0;
 }
 .sec-entry-header p a{
     font-family: 'Museo-Sans-700';
