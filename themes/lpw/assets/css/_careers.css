@@ -18,7 +18,7 @@
 }
 .full-width-img-bleed-sec-rows-cntlr ul li{
     position: relative;
-    background: #B0ACAC;
+    background: #CBCBCB;
 }
 .full-width-img-des-cntlr {
     display: flex;
@@ -51,6 +51,7 @@
     color: #FFFFFF;
     margin-bottom: 31px;
     text-transform: uppercase;
+    font-family: 'Museo-Sans-300';
 }
 .full-width-des-subtitle{
     text-transform: uppercase;
@@ -73,7 +74,7 @@
     border-color: #48484A;
 }
 .full-width-img-bleed-sec-rows-cntlr ul li:nth-child(2n+2){
-    background: #546E7E;
+    background: #3D268A;
 }
 
 .careers-grid-sec {
