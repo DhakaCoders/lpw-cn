@@ -56,7 +56,7 @@
 }
 .hm-banner-desc-cntlr{
 	height: 850px;
-	padding-top: 100px;
+	padding-top: 120px;
 	padding-bottom: 100px;
 	position: relative;
 	z-index: 10;
@@ -67,7 +67,7 @@
 }
 .hm-bnr-desc-title{
 	font-family: 'Museo-Sans-300';
-	line-height: 1.5;
+	line-height: 1.4;
 	color: #fff;
 	margin-bottom: 45px;
 }
@@ -160,7 +160,6 @@
 @media(max-width: 1299px){
 	.hm-banner-desc-cntlr{
 		height: 750px;
-		padding-top: 80px;
 		padding-bottom: 80px;
 	}
 	.cmnuty-srvcs-top-skew{
@@ -219,7 +218,6 @@
 }
 @media(max-width: 767px){
 	.hm-banner-desc-cntlr{
-		padding-top: 60px;
 		padding-bottom: 60px;
 	}
 	.cmnuty-srvcs-top-skew{
@@ -234,6 +232,9 @@
 	}
 	.hm-banner-desc-cntlr{
 		height: 600px;
+	}
+	.hm-bnr-desc-title br{
+		display: none!important;
 	}
 }
 @media(max-width: 575px){
@@ -260,6 +261,10 @@
 	.cmnuty-srvcs-item-img{
 		height: 140px;
 		width: 140px;
+		margin-bottom: 20px;
+	}
+	.cmnuty-srvcs-item-title{
+		margin-bottom: 12px;
 	}
 	.cmnuty-srvcs-item-img img{
 		max-height: 58px;
