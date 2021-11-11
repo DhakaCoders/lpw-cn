@@ -1,0 +1,72 @@
+.hm-banner{
+	position: relative;
+	overflow: hidden;
+}
+.hm-banner-bg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 3;
+}
+.has-video .hm-banner-bg{
+	display: none;
+}
+.hm-banner-bg-overlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 4;
+	background: rgba(255,255,255,0.4);
+}
+.hm-banner-bg-black{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 1;
+	background: #000;
+}
+.hm-video-cntlr {
+    right: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+#bnr-vdo {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 4;
+}
+.has-video .hm-video-cntlr{
+	display: block;
+}
+.hm-banner-desc-cntlr{
+	height: 960px;
+	padding-top: 130px;
+	padding-bottom: 130px;
+	position: relative;
+	z-index: 10;
+}
+.hm-bnr-desc{
+	max-width: 520px;
+	width: 100%;
+}
+.hm-bnr-desc-title{
+	font-family: 'Museo-Sans-300';
+	line-height: 1.5;
+	color: #fff;
+}
