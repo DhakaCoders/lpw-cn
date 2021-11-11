@@ -1,3 +1,9 @@
+.hm-contact-form-sec-wrp{
+    position: relative;
+    z-index: 9;
+    padding-top: 170px;
+    padding-bottom: 50px;
+}
 .contact-form-dsc-wrp {
     max-width: 730px;
     width: 100%;
@@ -236,3 +242,25 @@ textarea {
   color: #D61D1D!important;
   opacity: 1;
 }
+
+
+/*responsive*/
+@media(max-width: 1299px){
+
+}
+@media(max-width: 1199px){
+    
+}
+@media(max-width: 991px){
+    
+}
+@media(max-width: 767px){
+    
+}
+@media(max-width: 639px){
+    
+}
+@media(max-width: 575px){
+    
+}
+  
