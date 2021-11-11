@@ -32,7 +32,12 @@ p{
 	line-height: 1.7;
 	margin-bottom: 15px;
 }
-
+a{
+	color: #1aac70;
+}
+a:hover{
+	color: #FB5E24;
+}
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -42,9 +47,18 @@ textarea{
     appearance: none;
     outline: none;    
 }
+strong,b{
+	font-family: 'Museo-Sans-900';
+}
+i,em{
+	font-style: italic;
+}
+u{
+	text-decoration: underline;
+}
 ::selection {
   color: #fff;
-  background: #fa5e25;
+  background: #1aac70;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
