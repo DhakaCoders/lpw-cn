@@ -329,7 +329,7 @@
 .mbc-gallery-sec .mbc-grids-sec-entry-hdr-title{
 	text-align: center;
 	margin-bottom: 30px;
-	font-family: 'Museo-Sans-300';
+	font-family: 'Museo-Sans-900';
 }
 
 /*
@@ -617,6 +617,7 @@ Gallery design
 }
 .mbc-client-title{
 	color: #fff;
+	font-family: 'Museo-Sans-300';
 }
 .mbc-client-grds{
 	display: flex;
@@ -660,6 +661,18 @@ Gallery design
 .mbc-team-slider-btn-ctlr{
 	text-align: center;
 	padding-top: 55px;
+}
+.pd-top{
+	padding-top: 170px;
+}
+.mbc-client-btn-cntlr{
+	text-align: center;
+}
+.mbc-client-btn-cntlr .fl-btn.fl-white-transparent-btn:hover{
+	color: #FB5E24;
+	border-color: #FB5E24;
+}
+
 }
 /*responsive*/
 
@@ -791,6 +804,9 @@ Gallery design
 	.mbc-columns-2 .mbc-grids-col-entry-hdr{
 		padding-top: 35px;
 	}
+	.pd-top{
+		padding-top: 140px;
+	}
 	
 }
 
@@ -883,6 +899,9 @@ Gallery design
 	.mbc-columns-2 .mbc-grids-col-entry-hdr{
 		padding-top: 25px;
 	}
+	.pd-top{
+		padding-top: 120px;
+	}
 }
 @media(max-width: 991px){
 	.mbc-text-slider-ctlr {
@@ -964,6 +983,9 @@ Gallery design
 	}
 	.mbc-columns-2 .mbc-grids-col-entry-hdr{
 		padding-top: 15px;
+	}
+	.pd-top{
+		padding-top: 100px;
 	}
 
 }
@@ -1054,6 +1076,9 @@ Gallery design
 	.mbc-grid-item-inr p{
 		margin-bottom: 15px;
 	}
+	.pd-top{
+		padding-top: 80px;
+	}
 
 
 }
@@ -1072,6 +1097,10 @@ Gallery design
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.pd-top{
+		padding-top: 60px;
+	}
+
 }
 @media(max-width: 575px){
 	.mbc-team-sec {
@@ -1129,6 +1158,9 @@ Gallery design
 	.mbc-option-break-option-break-slider-ctlr {
 	    padding-left: 40px;
 	    padding-right: 40px;
+	}
+	.pd-top{
+		padding-top: 50px;
 	}
 }
 
