@@ -386,12 +386,6 @@ body.allWork {
 }
 
 
-
-
-/*responsive*/
-@media(max-width: 1699px){
-
-}
 @media(max-width: 1299px){
 	nav.main-nav > ul{
 		margin: 0 -18px;
