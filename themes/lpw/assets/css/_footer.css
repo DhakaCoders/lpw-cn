@@ -46,6 +46,13 @@
 .ftr-btm-menu ul li a{
 	color:#fff;
 }
+.ftr-tel a,
+.ftr-email a,
+.ftr-addr a,
+.ftr-developed-by p a,
+.ftr-btm-menu ul li a{
+	display: inline-block;
+}
 
 .ftr-tel a:hover,
 .ftr-email a:hover,
@@ -128,4 +135,45 @@
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+/*hr-desing*/
+
+.hr-color-black,
+.hr-color-blue,
+.hr-color-orange,
+.hr-color-green,
+.hr-orangebg-white{
+	margin:0;
+	margin-bottom:38px;
+}
+
+.hr-color-black{
+	border-top:1px solid #716A6A;
+}
+.hr-color-blue{
+	border-top:1px solid #3D268A;
+}
+.hr-color-orange{
+	border-top:1px solid #F75F31;
+}
+.hr-color-green{
+	border-top:1px solid #40B073;
+}
+.hr-orangebg-white{
+	height: 65px;
+	background: #FB5E24;
+	position: relative;
+	margin-left: -23px;
+	margin-right: -23px;
+}
+.hr-orangebg-white:after{
+	content: "";
+	position: absolute;
+	height:1px;
+	background-color:#fff;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 23px;
+	right: 23px;
 }
