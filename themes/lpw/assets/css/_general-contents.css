@@ -532,8 +532,8 @@ Gallery design
 
 
 .mbc-content-sec{
-	padding-top: 160px;
-	padding-bottom: 130px;
+	padding-top: 100px;
+	padding-bottom: 20px;
 }
 
 .mbc-content-des a{
@@ -543,10 +543,9 @@ Gallery design
 
 
 .mbc-btn-sec{
-	padding-top: 80px;
-	padding-bottom: 80px;
-	/*background: #CBCBCB;
-*/}
+	padding-top: 28px;
+	padding-bottom:35px;
+}
 .mbc-prev-nxt-ctlr{
 	margin-left: auto;
 }
@@ -554,6 +553,15 @@ Gallery design
 	display: inline-block;
 	vertical-align: baseline;
 	margin-bottom: 15px;
+}
+.btn-bg-transparent {
+    width: 219px;
+    background: #fb5e24;
+    padding: 13px 15px;
+    text-align: center;
+}
+.btn-bg-transparent a{
+	margin-bottom: 0;
 }
 .mbc-btn ul{
 	display: flex;
@@ -566,6 +574,9 @@ Gallery design
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 20px;
+	max-width:20%;
+	width:100%;
+	text-align: center;
 }
 
 .mbc-prev-nxt{
@@ -823,6 +834,12 @@ Gallery design
 	
 }
 
+@media(max-width:1399px){
+	.hr-orangebg-white{
+		margin-left:0;
+		margin-right:0;
+	}
+}
 @media(max-width: 1199px){
 	.mbc-text-slider-ctlr {
 	    padding-bottom: 100px;
