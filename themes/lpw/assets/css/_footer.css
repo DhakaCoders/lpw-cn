@@ -269,6 +269,45 @@
     	padding-bottom: 25px;
 	}
 	.ftr-rgt {
-	    padding-top: 90px;
+	    padding-top: 75px;
+	}
+}
+@media(max-width:575px){
+	.ftr-grn-bg {
+	    background-position: left 49px bottom 0px!important;
+	}
+	.ftr-email a, 
+	.ftr-addr a,
+	.ftr-copyright p, 
+	.ftr-developed-by p, 
+	.ftr-developed-by p a, 
+	.ftr-btm-menu ul li a{
+		font-size:15px;
+	}
+	.ftr-tel {
+    	margin-bottom: 10px;
+ 	}
+ 	.ftr-btm-cntlr{
+		padding: 15px 0;
+	}
+	.ftr-tel a{
+		font-size:17px;
+	}
+	.ftr-grn-bg{
+		height: 710px;
+	}
+}
+@media(max-width:479px){
+	.ftr-logo a {
+    	max-width: 120px;
+	}
+	.ftr-grn-bg{
+		height: 680px;
+	}
+	.ftr-rgt {
+	    padding-top: 77px;
+	}
+	.ftr-grn-bg {
+	    background-position: left 32px bottom 0px!important;
 	}
 }
