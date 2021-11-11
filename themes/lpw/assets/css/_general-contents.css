@@ -5,7 +5,8 @@
 }
 
 .mbc-text-slider-wrap{
-	padding-top: 170px;
+	padding-top: 140px;
+	padding-bottom: 140px;
 	border-top: 2px solid #716A6A;
 	position: relative;
 }
@@ -50,7 +51,8 @@
 }
 
 .mbc-text-slider-title{
-	color: #405D6F;
+	color: #FB5E24;
+	font-family: 'Museo-Sans-300'
 }
 
 
