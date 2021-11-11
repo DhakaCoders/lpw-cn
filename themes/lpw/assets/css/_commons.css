@@ -286,6 +286,23 @@ ul.ab-top-menu li:before,
 	background: transparent;
 	border: 1px solid #FB5E24;
 }
+.dft-fl-btn{
+	display: inline-block;
+	vertical-align: baseline;
+	max-width: 173px;
+	width: 100%;
+	color: #FFFFFF;
+	background: transparent;
+	font-size: 12px;
+	font-family: 'Museo-Sans-500';
+	line-height: 1.1;
+	text-align: center;
+	padding: 13px 13px 12px;
+	border: 1px solid #FB5E24;
+	text-transform: uppercase;
+	border-radius: 18px;
+	text-decoration: none;
+}
 /**
 Selects
 */
