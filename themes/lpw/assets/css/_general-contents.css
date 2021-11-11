@@ -657,7 +657,10 @@ Gallery design
 .mbc-columns-2 .mbc-grids-col-entry-hdr{
 	padding-top: 45px;
 }
-
+.mbc-team-slider-btn-ctlr{
+	text-align: center;
+	padding-top: 55px;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
