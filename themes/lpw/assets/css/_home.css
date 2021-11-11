@@ -82,6 +82,19 @@
 .community-services-sec{
 	padding-top: 90px;
 	background: #fa5e25;
+	position: relative;
+}
+.cmnuty-srvcs-top-skew{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin-top: -412px;
+	height: 414px;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
+	background-size: 100% 100%!important;
+	z-index: 10;
 }
 .cmnuty-srvcs-entry-header .sec-entry-header-title{
 	color: #fff;
