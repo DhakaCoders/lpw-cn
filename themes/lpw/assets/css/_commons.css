@@ -277,6 +277,15 @@ ul.ab-top-menu li:before,
 	background: transparent;
 	color: #000000;
 }
+.fl-black-btn{
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	color: #FB5E24;
+}
+.fl-black-btn:hover{
+	background: transparent;
+	border: 1px solid #FB5E24;
+}
 /**
 Selects
 */
