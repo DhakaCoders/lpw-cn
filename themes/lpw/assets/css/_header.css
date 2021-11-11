@@ -14,16 +14,16 @@
 }
 .logo a{
 	display: inline-block;
-	max-width: 160px;
+	max-width: 150px;
 }
 .hdr-rgt{
 	margin-left: auto;
-	padding-top: 70px;
+	padding-top: 50px;
 }
 .hdr-topbar{
 	display: flex;
 	max-width: 960px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	border-bottom: 2px solid #939598;
 }
 .hdr-details{
@@ -163,7 +163,7 @@ nav.main-nav > ul{
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 0 -20px;
-	padding-top: 35px;
+	padding-top: 30px;
 }
 nav.main-nav > ul > li{
 	padding: 0 20px;
@@ -172,7 +172,7 @@ nav.main-nav > ul > li{
 }
 nav.main-nav > ul > li > a{
 	font-size: 22px;
-	padding-bottom: 35px;
+	padding-bottom: 30px;
 	color: #939598;
 }
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:last-child{
@@ -389,7 +389,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
 @media(max-width: 1699px){
 
 }
-@media(max-width: 1399px){
+@media(max-width: 1299px){
 	
 	
 }
