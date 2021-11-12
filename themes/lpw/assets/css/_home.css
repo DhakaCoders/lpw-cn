@@ -56,7 +56,7 @@
 }
 .hm-banner-desc-cntlr{
 	height: 850px;
-	padding-top: 110px;
+	padding-top: 100px;
 	padding-bottom: 100px;
 	position: relative;
 	z-index: 10;
@@ -67,12 +67,12 @@
 }
 .hm-bnr-desc > p{
 	font-family: 'Museo-Sans-300';
-	line-height: 1.3;
+	line-height: 1.253;
 	color: #fff;
-	font-size: 30px;
+	font-size: 29px;
 }
 .hm-bnr-desc > p:last-of-type{
-	margin-bottom: 45px;
+	margin-bottom: 38px;
 }
 .hm-bnr-desc-btn .fl-white-btn.fl-btn:hover{
 	border-color: #fff;
