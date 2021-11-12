@@ -305,6 +305,7 @@ ol li::before {
     padding-bottom: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .fl-h1.page-bnr-title{
 	color: #fff;

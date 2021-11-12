@@ -243,7 +243,6 @@ ul.ab-top-menu li:before,
 	display: inline-block;
 	vertical-align: baseline;
 	min-width: 173px;
-	width: 100%;
 	color: #FFFFFF;
 	background: #FB5E24;
 	font-size: 12px;
@@ -318,7 +317,6 @@ ul.ab-top-menu li:before,
 	display: inline-block;
 	vertical-align: baseline;
 	min-width: 173px;
-	width: 100%;
 	color: #FFFFFF;
 	background: transparent;
 	font-size: 12px;
