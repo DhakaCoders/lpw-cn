@@ -157,6 +157,7 @@ nav.main-nav ul li a{
 	line-height: 1;
 	position: relative;
 	color: #939598;
+	text-transform: capitalize;
 }
 nav.main-nav > ul{
 	display: flex;
