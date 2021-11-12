@@ -38,27 +38,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.fl-green-btn {
-    display: inline-block;
-    vertical-align: baseline;
-    font-size: 16px;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    padding: 15px 15px;
-    border: 2px solid #00A04D;
-    background: #00A04D;
-    color: #fff;
-    min-width: 210px;
-}
-.fl-green-btn:hover {
-    background: transparent;
-    color: #00A04D;
-    border-color: #00A04D;
-}
 .page-404-sec-wrp{
     position: relative;
     z-index: 9;
+}
+@media (max-width: 359px){
+    .page-404-btn a{
+        max-width: 100%;
+    }
 }
