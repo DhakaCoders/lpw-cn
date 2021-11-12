@@ -35,12 +35,7 @@ if( !function_exists('cbv_theme_setup') ){
         ) );
 
         register_nav_menus( array(
-            'cbv_main_menu' => __( 'Main Menu', 'lpw' ),
-            'cbv_footer_menu1' => __( 'Footer Menu 1', 'lpw' ),
-            'cbv_footer_menu2' => __( 'Footer Menu 2', 'lpw' ),
-            'cbv_footer_menu3' => __( 'Footer Menu 3', 'lpw' ),
-            'cbv_footer_menu4' => __( 'Footer Menu 4', 'lpw' ),
-            'cbv_copyright_menu' => __( 'Copyright', 'lpw' ),
+            'cbv_main_menu' => __( 'Main Menu', 'lpw' )
         ) );
 
     }
@@ -57,12 +52,12 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/fonts.php' );
     if( !is_front_page() ) include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
-    include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
+    //include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
     include_once( THEME_DIR . '/enq-scripts/animate.php' );
     include_once( THEME_DIR . '/enq-scripts/select2.php' );
     include_once( THEME_DIR . '/enq-scripts/flatpickr.php' );
-    include_once( THEME_DIR . '/enq-scripts/waypoints.php' );
+    //include_once( THEME_DIR . '/enq-scripts/waypoints.php' );
     include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
 }
 
@@ -70,10 +65,10 @@ add_action( 'wp_enqueue_scripts', 'cbv_theme_scripts');
 /**
 Includes->>
 */
-include_once(THEME_DIR .'/inc/widgets-area.php');
+//include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
-include_once(THEME_DIR .'/inc/ajax-services-load.php');
+//include_once(THEME_DIR .'/inc/ajax-services-load.php');
 /**
 ACF Option pages->>
 */

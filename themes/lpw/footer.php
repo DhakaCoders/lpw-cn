@@ -18,9 +18,9 @@
 
 <footer class="footer-wrp">
   <div class="ftr-background">
-    <div class="ftr-grn-bg hide-md" style="background-image: url(assets/images/ftr-bg.png);"></div>
-    <div class="ftr-grn-bg ftr-grn-bg2 show-md" style="background-image: url(assets/images/ftr-bg2.png);"></div>
-    <!-- <img src="assets/images/ftr-bg.png"> -->
+    <div class="ftr-grn-bg hide-md" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ftr-bg.png);"></div>
+    <div class="ftr-grn-bg ftr-grn-bg2 show-md" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/ftr-bg2.png);"></div>
+    <!-- <img src="<?php echo THEME_URI; ?>/assets/images/ftr-bg.png"> -->
   </div>
   <div class="container">
     <div class="row">
@@ -106,5 +106,6 @@
   </div> 
 </footer>
 </div>
+<?php wp_footer(); ?>
 </body>
 </html>

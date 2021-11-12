@@ -133,7 +133,7 @@
     <div class="xs-mbl-hdr">
       <div class="hdr-lft">
         <div class="logo">
-          <a href="#"><img src="assets/images/logo.svg"></a>
+          <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg"></a>
         </div>
       </div>
       <div class="hdr-rgt">
