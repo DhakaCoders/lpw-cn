@@ -242,7 +242,7 @@ ul.ab-top-menu li:before,
 .fl-btn{
 	display: inline-block;
 	vertical-align: baseline;
-	max-width: 173px;
+	min-width: 173px;
 	width: 100%;
 	color: #FFFFFF;
 	background: #FB5E24;
@@ -317,7 +317,7 @@ ul.ab-top-menu li:before,
 .dft-fl-btn{
 	display: inline-block;
 	vertical-align: baseline;
-	max-width: 173px;
+	min-width: 173px;
 	width: 100%;
 	color: #FFFFFF;
 	background: transparent;

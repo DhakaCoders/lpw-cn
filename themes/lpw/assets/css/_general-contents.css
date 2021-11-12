@@ -956,6 +956,9 @@ Gallery design
 	.mbc-team-slider-btn-ctlr{
 		padding-top: 30px;
 	}
+	.mbc-btn ul li{
+		max-width: 25%;
+	}
 }
 @media(max-width: 991px){
 	.mbc-text-slider-ctlr {
@@ -1150,6 +1153,9 @@ Gallery design
 	}
 	.mbc-client-btn-cntlr{
 		padding-top: 30px;
+	}
+	.mbc-btn ul li{
+		max-width: 33.333%;
 	}
 
 }
