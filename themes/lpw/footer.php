@@ -6,12 +6,10 @@
     $logo_tag = '';
   }
   $telephone = get_field('telephone', 'options');
-  $fax = get_field('fax', 'options');
   $email = get_field('emailaddres', 'options');
   $address = get_field('address', 'options');
   $gurl = get_field('gurl', 'options');
   $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
-  $cooper = get_field('cooper_basin', 'options');
   $sinfo = get_field('social_media', 'options');
   $copyright_text = get_field('copyright_text', 'options');
 ?> 
@@ -52,48 +50,64 @@
                   </a>
                 </div>
               </div>
+              <?php if( $sinfo ): ?>
               <div class="ftr-top-social">
                 <ul class="reset-list">
-
+                  <?php 
+                    if( !empty($sinfo['instagram_url']) ): 
+                  ?>
                   <li>
-                    <a target="_blank" href="#">
+                    <a target="_blank" href="<?php echo $sinfo['instagram_url']; ?>">
                       <i>
                         <svg class="instagram-svg" width="21.5" height="21.5" viewBox="0 0 21.5 21.5" fill="transparent">
-                        <use xlink:href="#instagram-svg"></use> </svg>
+                        <use xlink:href="#instagram-svg"></use> 
+                        </svg>
                       </i>
                     </a>
                   </li>
-
+                  <?php endif; 
+                    if( !empty($sinfo['facebook_url']) ): 
+                  ?>
                   <li>
-                    <a target="_blank" href="#">
+                    <a target="_blank" href="<?php echo $sinfo['facebook_url']; ?>">
                       <i>
                         <svg class="facebook-svg" width="11.419" height="21.32" viewBox="0 0 11.419 21.32" fill="transparent">
-                        <use xlink:href="#facebook-svg"></use> </svg>
+                          <use xlink:href="#facebook-svg"></use> 
+                        </svg>
                       </i>
                     </a>
                   </li>
-
+                  <?php endif; 
+                    if( !empty($sinfo['youtube_url']) ): 
+                  ?>
                   <li>
-                    <a target="_blank" href="#">
+                    <a target="_blank" href="<?php echo $sinfo['youtube_url']; ?>">
                       <i>
                         <svg class="youtube-svg" width="29.007" height="20.68" viewBox="0 0 29.007 20.68" fill="transparent">
-                        <use xlink:href="#youtube-svg"></use> </svg>
+                          <use xlink:href="#youtube-svg"></use> 
+                        </svg>
                       </i>
                     </a>
                   </li>
-                  
+                  <?php endif; ?>
                 </ul>
               </div>
+              <?php endif; ?>
             </div>
             <div class="ftr-btm-cntlr">
               <div class="ftr-copyright">
-                <p>&copy;2021 Live Play Work</p>
+                <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?>
               </div>
               <div class="ftr-btm-menu">
-                <ul class="reset-list">
-                  <li><a href="#">Privacy policy</a></li>
-
-                </ul>
+                <?php 
+                  $copymenuOptions = array( 
+                      'theme_location' => 'cbv_copyright_menu', 
+                      'menu_class' => 'reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $copymenuOptions ); 
+                ?>
               </div>
               <div class="ftr-developed-by">
                 <p>Website by <a href="#">BEVIN Creative</a></p>

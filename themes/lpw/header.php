@@ -105,22 +105,15 @@
               </div>
               <div class="hdr-menu hide-md">
                 <nav class="main-nav">
-                  <ul class="clearfix reset-list">
-                    <li class="current-menu-item"><a href="#">Home</a></li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Nav 1</a>
-                      <ul class="sub-menu">
-                        <li><a href="#">submenu 1</a></li>
-                        <li><a href="#">submenu 2</a></li>
-                        <li><a href="#">submenu 3</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Nav 2</a></li>
-                    <li><a href="#">Nav 3</a></li>
-                    <li><a href="#">Nav 4</a></li>
-                    <li><a href="#">Nav 5</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
+                  <?php 
+                    $mmenuOptions = array( 
+                        'theme_location' => 'cbv_main_menu', 
+                        'menu_class' => 'clearfix reset-list',
+                        'container' => '',
+                        'container_class' => ''
+                      );
+                    wp_nav_menu( $mmenuOptions ); 
+                  ?>
                 </nav>
               </div>
             </div>
