@@ -1,0 +1,64 @@
+.page-404-sec-wrp {
+    padding-bottom: 85px;
+    padding-top: 50px;
+}
+.page-404-dsc-wrp{
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.page-404-dsc-wrp .title-404 {
+    
+}
+.title-404{
+    display: inline-block;
+    vertical-align: baseline;
+    padding-bottom: 40px;
+    color: #141414;
+    font-size: 96px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+}
+.page-404-dsc-wrp span {
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #141414;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.page-404-dsc-wrp p {
+    margin-bottom: 60px;
+}
+.page-404-btn{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fl-green-btn {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding: 15px 15px;
+    border: 2px solid #00A04D;
+    background: #00A04D;
+    color: #fff;
+    min-width: 210px;
+}
+.fl-green-btn:hover {
+    background: transparent;
+    color: #00A04D;
+    border-color: #00A04D;
+}
+.page-404-sec-wrp{
+    position: relative;
+    z-index: 9;
+}
