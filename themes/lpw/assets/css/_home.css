@@ -65,10 +65,13 @@
 	max-width: 515px;
 	width: 100%;
 }
-.hm-bnr-desc-title{
+.hm-bnr-desc > p{
 	font-family: 'Museo-Sans-300';
 	line-height: 1.3;
 	color: #fff;
+	font-size: 30px;
+}
+.hm-bnr-desc > p:last-of-type{
 	margin-bottom: 45px;
 }
 .hm-bnr-desc-btn .fl-white-btn.fl-btn:hover{
@@ -204,6 +207,9 @@
 	.cmnuty-srvcs-item-desc p br{
 		display: none!important;
 	}
+	.hm-bnr-desc > p{
+		font-size: 28px;
+	}
 }
 @media(max-width: 991px){
 	.cmnuty-srvcs-top-skew{
@@ -239,6 +245,9 @@
 	.cmnuty-srvcs-item-title{
 		margin-bottom: 12px;
 	}
+	.hm-bnr-desc > p{
+		font-size: 24px;
+	}
 }
 @media(max-width: 767px){
 	.hm-banner-desc-cntlr{
@@ -257,7 +266,10 @@
 	.hm-banner-desc-cntlr{
 		height: 600px;
 	}
-	.hm-bnr-desc-title br{
+	.hm-bnr-desc > p{
+		font-size: 22px;
+	}
+	.hm-bnr-desc > p br{
 		display: none!important;
 	}
 }
