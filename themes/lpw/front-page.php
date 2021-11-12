@@ -101,6 +101,13 @@ if($showhide_services):
 </section>
 <?php endif; endif;?>
 
+
+<?php
+$showhide_contact = get_field('showhide_contact', HOMEID);
+if($showhide_contact): 
+  $contactsec = get_field('contactsec', HOMEID); 
+  if($contactsec ): 
+?>
 <section class="hm-contact-form-sec-wrp">
 	<div class="container">
 	  <div class="row">
@@ -108,40 +115,34 @@ if($showhide_services):
 	      <div class="contact-form-block clearfix">
 	        <div class="contact-form-dsc-wrp">
 	          <div class="sec-entry-header">
-	            <h2 class="sec-entry-header-title fl-h6">ABOUT OUR COMMUNITY & SERVICES</h2>
-	            <p>Have we contacted you? Return message now! <a href="mailto:e:admin@liveplaywork.com.au">e: admin@liveplaywork.com.au</a></p>
+	          	<?php  
+	        		if( !empty($contactsec['title']) ) printf('<h2 class="sec-entry-header-title fl-h6">%s</h2>', $contactsec['title']); 
+	        	?>
+	            <p>
+            	<?php 
+            		if( !empty($contactsec['description']) ) printf('%s', $contactsec['description']); 
+            		$email = get_field('emailaddres', 'options');
+            		if( !empty($email) ) printf('<a href="mailto:%s"> e: %s</a>', $email, $email);
+            	?>
+	            </p>
 	          </div>
+
+	          <?php 
+	          	$shortcode = $contactsec['shortcode'];
+	          	if( !empty($shortcode) ): 
+	          ?>
 	          <div class="contact-form-wrp clearfix">
 	            <div class="wpforms-container">
-	              <div class="wpforms-form needs-validation novalidate">
-	                <div class="wpforms-field-container">
-	                  <div class="wpforms-field">
-	                    <input type="text" name="name" placeholder="Your name" required="">
-	                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-	                  </div>
-	                  <div class="wpforms-field">
-	                    <input type="email" name="email" placeholder="Your email" required="">
-	                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-	                  </div>
-	                  <div class="wpforms-field">
-	                    <input type="text" name="text" placeholder="Contact number" required="">
-	                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-	                  </div>
-	                  <div class="wpforms-field wpforms-field-textarea">
-	                    <textarea name="message" placeholder="Write your message here"></textarea>
-	                  </div>
-	                </div>
-	                <div class="wpforms-submit-container">
-	                  <button type="submit" name="submit" class="wpforms-submit">send message</button>
-	                </div>
-	              </div>
+	              <?php echo do_shortcode($shortcode); ?>
 	            </div>
 	          </div>
+	      	  <?php endif; ?>
 	        </div>
 	      </div>
 	    </div>
 	  </div>
 	</div>
 </section>
+<?php endif; endif;?>
 
 <?php get_footer(); ?>
