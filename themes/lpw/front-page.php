@@ -47,6 +47,12 @@ if($hbanner):
 </section>
 <?php endif; ?>
 
+<?php
+$showhide_services = get_field('showhide_services', HOMEID);
+if($showhide_services): 
+  $servicesec = get_field('servicesec', HOMEID); 
+  if($servicesec ): 
+?>
 
 <section class="community-services-sec">
 	<div class="cmnuty-srvcs-top-skew" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cmnuty-srvcs-top-skew.png');"></div>
@@ -55,86 +61,45 @@ if($hbanner):
 	    <div class="col-md-12">
 	      <div class="cmnuty-srvcs-cntlr">
 	        <div class="sec-entry-header cmnuty-srvcs-entry-header">
-	          <h2 class="sec-entry-header-title fl-h6">ABOUT OUR COMMUNITY & SERVICES</h2>
-	          <p>Charity provider of sustainable lifestyle services, activities & resources. We service those in need via other service providers. Founded on collaboration, and a balance between: Living, Playing & Working.</p>
+	        	<?php  
+	        		if( !empty($servicesec['title']) ) printf('<h2 class="sec-entry-header-title fl-h6">%s</h2>', $servicesec['title']); 
+	        		if( !empty($servicesec['description']) ) echo wpautop( $servicesec['description'] );
+	        	?>
 	        </div>
+	        <?php 
+		        $services = $servicesec['services'];
+		        if( $services ):
+		    ?>
 	        <div class="cmnuty-srvcs-grid-cntlr">
 	          <div class="cmnuty-srvcs-grid cmnutySrvcsSlider">
+	          	<?php foreach( $services as $service ): ?>
 	            <div class="cmnuty-srvcs-item-cntlr">
 	              <div class="cmnuty-srvcs-item-inr">
 	                <div class="cmnuty-srvcs-item">
 	                  <div class="cmnuty-srvcs-item-img">
-	                    <img src="<?php echo THEME_URI; ?>/assets/images/cmnuty-srvcs-item-img-001.svg" alt="">
+	                  	<?php echo !empty($service['icon'])? cbv_get_image_tag($service['icon']):''; ?>
 	                  </div>
 	                  <div class="cmnuty-srvcs-item-desc-cntlr">
-	                    <h3 class="cmnuty-srvcs-item-title fl-h6 mHc">LIVE</h3>
+	                  	<?php  
+			              if( !empty($service['title']) ) printf( '<h3 class="cmnuty-srvcs-item-title fl-h6 mHc">%s</h3>', $service['title'] ); 
+			            ?>
 	                    <div class="cmnuty-srvcs-item-desc">
-	                      <p>We can assist you,<br> your community or business to<br> enjoy & live your best life.
-	                      </p>
+	                    	<?php  if( !empty($service['description']) ) echo wpautop( $service['description'] ); ?>
 	                    </div>
 	                  </div>
 	                </div>
 	              </div>
 	            </div>
-	            <div class="cmnuty-srvcs-item-cntlr">
-	              <div class="cmnuty-srvcs-item-inr">
-	                <div class="cmnuty-srvcs-item">
-	                  <div class="cmnuty-srvcs-item-img">
-	                    <img src="<?php echo THEME_URI; ?>/assets/images/cmnuty-srvcs-item-img-002.svg" alt="">
-	                  </div>
-	                  <div class="cmnuty-srvcs-item-desc-cntlr">
-	                    <h3 class="cmnuty-srvcs-item-title fl-h6 mHc">PLAY!… WHAT’S <br> STOPPING YOU?</h3>
-	                    <div class="cmnuty-srvcs-item-desc">
-	                      <p>Life can get so serious!<br> 
-	                        Play that is light-hearted,<br> balanced & creative ensures<br> joy for your best life.
-	                      </p>
-	                    </div>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-	            <div class="cmnuty-srvcs-item-cntlr">
-	              <div class="cmnuty-srvcs-item-inr">
-	                <div class="cmnuty-srvcs-item">
-	                  <div class="cmnuty-srvcs-item-img">
-	                    <img src="<?php echo THEME_URI; ?>/assets/images/cmnuty-srvcs-item-img-003.svg" alt="">
-	                  </div>
-	                  <div class="cmnuty-srvcs-item-desc-cntlr">
-	                    <h3 class="cmnuty-srvcs-item-title fl-h6 mHc">WORK <br> (COMMUNITY)</h3>
-	                    <div class="cmnuty-srvcs-item-desc">
-	                      <p>Work (occupation & community)<br> paid, volunteer or hobbies?<br> 
-	                        We work with you, your community<br> & others to find purpose & belong<br> in your best life.
-	                      </p>
-	                    </div>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-	            <div class="cmnuty-srvcs-item-cntlr">
-	              <div class="cmnuty-srvcs-item-inr">
-	                <div class="cmnuty-srvcs-item">
-	                  <div class="cmnuty-srvcs-item-img">
-	                    <img src="<?php echo THEME_URI; ?>/assets/images/cmnuty-srvcs-item-img-004.svg" alt="">
-	                  </div>
-	                  <div class="cmnuty-srvcs-item-desc-cntlr">
-	                    <h3 class="cmnuty-srvcs-item-title fl-h6 mHc">WORK <br> (INDIVIDUALS)</h3>
-	                    <div class="cmnuty-srvcs-item-desc">
-	                      <p>What are your strengths? 
-	                        What<br> work do you need to do for<br> yourself & your best life? (We don’t<br> service individuals’ needs directly.<br> 
-	                        We collaborate, assist & connect<br> other services to assist you).
-	                      </p>
-	                    </div>
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
+	            <?php endforeach; ?>
 	          </div>
 	        </div>
+	        <?php endif; ?>
 	      </div>
 	    </div>
 	  </div>
 	</div>
 </section>
+<?php endif; endif;?>
 
 <section class="hm-contact-form-sec-wrp">
 	<div class="container">
