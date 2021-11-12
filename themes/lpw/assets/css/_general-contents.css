@@ -690,7 +690,14 @@ Gallery design
 .mbc-gallery-btn-cntlr{
 	padding-top: 70px;
 }
-
+.mbc-fullwidth-txt-module a{
+	margin-top: 30px;
+}
+.mbc-fullwidth-txt-module.mbc-fullwidth-txt-module-white-red a:hover{
+	color: #fff;
+	background: #000;
+	border-color: #000;
+}
 
 /*responsive*/
 
@@ -1156,6 +1163,9 @@ Gallery design
 	}
 	.mbc-btn ul li{
 		max-width: 33.333%;
+	}
+	.mbc-fullwidth-txt-module a{
+		margin-top: 20px;
 	}
 
 }
