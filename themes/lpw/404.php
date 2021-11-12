@@ -1,6 +1,8 @@
  <?php 
 get_header(); 
 ?>
+<?php get_template_part('templates/page', 'banner'); ?>
+<?php get_template_part('templates/breadcrumbs'); ?>
 <section class="page-404-sec-wrp">
   <div class="container">
     <div class="row">
