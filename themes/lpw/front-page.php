@@ -1,14 +1,30 @@
-<?php get_header(); ?>
+<?php get_header(); 
 
-<section class="hm-banner"><!--  has-video -->
+$hbanner = get_field('home_banner', HOMEID);
+if($hbanner):
+  $banner = !empty($hbanner['image'])? cbv_get_image_src( $hbanner['image'] ): '';
+  $hasvideo = !empty($hbanner['ogg_video']) || !empty($hbanner['mp4_video'])? true:false;
+?>
+<section class="hm-banner <?php echo $hasvideo?' has-video':''; ?>"><!--  has-video -->
 	<div class="hm-banner-bg-black"></div>
-	<div class="hm-video-cntlr">
-	  <video id="bnr-vdo" autoplay muted loop>
-	    <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
-	    <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
-	  </video>
-	</div>
-	<div class="hm-banner-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/hm-banner-bg.jpg');">
+	<?php 
+    if( $hasvideo ): 
+      $video_urlmp4 = $hbanner['mp4_video'];
+      $video_urlogg = $hbanner['ogg_video'];
+    ?>
+    <div class="hm-video-cntlr">
+      <video id="bnr-vdo" autoplay muted loop>
+        <?php if( !empty($video_urlogg)){ ?>
+        <source src="<?php echo $video_urlogg; ?>" type="video/ogg">
+        <?php } 
+        if( !empty($video_urlmp4)){
+        ?>
+        <source src="<?php echo $video_urlmp4; ?>" type="video/mp4">
+        <?php } ?>
+      </video>
+    </div>
+    <?php endif; ?>
+	<div class="hm-banner-bg inline-bg" style="background-image: url('<?php echo $banner; ?>');">
 	</div>
 	<!-- <div class="hm-banner-bg-overlay"></div> -->
 	<div class="container">
@@ -16,23 +32,20 @@
 	    <div class="col-md-12">
 	      <div class="hm-banner-desc-cntlr">
 	        <div class="hm-bnr-desc">
-	          <h1 class="hm-bnr-desc-title fl-h4">RESILIENCE building partners <br>
-	            for veterans, first responders, <br>
-	            indigenous, disadvantaged <br>
-	            youth, vulnerable high risk<br>
-	            individuals, communities <br>
-	            and workers, other service <br>
-	            providers and more!
-	          </h1>
-	          <div class="hm-bnr-desc-btn">
-	            <a class="fl-white-btn fl-btn" href="#">FIND OUT MORE</a>
-	          </div>
+	        	<?php 
+                if( !empty($hbanner['description']) ) echo wpautop( $hbanner['description'] );
+                $hbannerlink = $hbanner['link'];
+                if( is_array( $hbannerlink ) &&  !empty( $hbannerlink['url'] ) ){
+                    printf('<div class="hm-bnr-desc-btn"><a class="fl-white-btn fl-btn" href="%s" target="%s">%s</a></div>', $hbannerlink['url'], $hbannerlink['target'], $hbannerlink['title']); 
+                }
+              ?>
 	        </div>
 	      </div>
 	    </div>
 	  </div>
 	</div>    
 </section>
+<?php endif; ?>
 
 
 <section class="community-services-sec">
