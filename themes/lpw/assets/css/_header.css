@@ -404,6 +404,12 @@ body.allWork {
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
 		font-size: 19px;
 	}
+	.hdr-details{
+		margin: 0 -15px;
+	}
+	.hdr-details-col{
+		padding: 0 15px;
+	}
 	
 }
 @media(max-width: 1199px){
@@ -565,6 +571,12 @@ body.allWork {
 	}
 	.xs-mbl-socials ul li a i svg{
 		fill: #FB5E24;
+	}
+	.hdr-details{
+		margin: 0 -20px;
+	}
+	.hdr-details-col{
+		padding: 0 20px;
 	}
 
 }
