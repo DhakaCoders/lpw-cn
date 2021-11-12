@@ -36,19 +36,11 @@
           <div class="ftr-rgt">
             <div class="ftr-top-cntlr">
               <div class="ftr-top-details">
-                <div class="ftr-tel">
-                  <a href="tel:1300459308">1300 459 308</a>
-                </div>
-                <div class="ftr-email">
-                  <h6 class="ftr-email-title">Lorem ipsum</h6>
-                  <a href="mailto:admin@liveplaywork.com.au">admin@liveplaywork.com.au</a>
-                </div>
-                <div class="ftr-addr">
-                  <a href="#">
-                    Level 1, 53 Burswood Road<br>
-                    Burswood WA 6100
-                  </a>
-                </div>
+                <?php 
+                  if( !empty($telephone) ) printf('<div class="ftr-tel"><a href="tel:%s">%s</a></div>', phone_preg($telephone), $telephone); 
+                  if( !empty($email) ) printf('<div class="ftr-email"><h6 class="ftr-email-title">Lorem ipsum</h6> <a href="mailto:%s">%s</a></div>', $email, $email);
+                  if( !empty($address) ) printf(' <div class="ftr-addr"><a href="%s" target="_blank">%s</a></div>', $gmaplink, $address); 
+                ?>
               </div>
               <?php if( $sinfo ): ?>
               <div class="ftr-top-social">

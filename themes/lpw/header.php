@@ -85,21 +85,27 @@
               <div class="hdr-topbar">
                 <div class="hdr-details-cntlr hide-md">
                   <div class="hdr-details ">
+                    <?php if( !empty($email) ): ?>
                     <div class="hdr-mail hdr-details-col">
-                      <a href="mailto:admin@liveplaywork.com.au">
+                      <a href="mailto:<?php echo $email; ?>">
                         <i><svg class="mail-icon" width="27.682" height="17.411" viewBox="0 0 27.682 17.411" fill="#fb5e24">
                           <use xlink:href="#mail-icon"></use></svg>
                         </i>
                       </a>
                     </div>
+                    <?php 
+                      endif;
+                      if( !empty($telephone) ):
+                    ?>
                     <div class="hdr-tel hdr-details-col">
-                      <a href="tel:1300459308">
-                        <span>1300 459 308</span>
+                      <a href="tel:<?php echo phone_preg($telephone); ?>">
+                        <?php printf('<span>%s</span>', $telephone); ?>
                         <i><svg class="phone-icon" width="18.899" height="21.32" viewBox="0 0 18.899 21.32" fill="#fb5e24">
                           <use xlink:href="#phone-icon"></use></svg>
                         </i>
                       </a>
                     </div>
+                    <?php endif; ?>
                   </div>
                 </div>
               </div>
@@ -125,9 +131,13 @@
   <div class="xs-mobile-menu">
     <div class="xs-mbl-hdr">
       <div class="hdr-lft">
+        <?php if( !empty($logo_tag) ): ?>
         <div class="logo">
-          <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg"></a>
+         <a href="<?php echo esc_url(home_url('/')); ?>">
+            <?php echo $logo_tag; ?>
+           </a>
         </div>
+        <?php endif; ?>
       </div>
       <div class="hdr-rgt">
         <div class="hamburger-cntlr">
@@ -141,46 +151,50 @@
     </div>
     <div class="xs-menu">
       <nav class="main-nav">
-        <ul class="clearfix reset-list">
-          <li class="current-menu-item"><a href="#">Home</a></li>
-          <li class="menu-item-has-children">
-            <a href="#">Nav 1</a>
-            <ul class="sub-menu">
-              <li><a href="#">submenu 1</a></li>
-              <li><a href="#">submenu 2</a></li>
-              <li><a href="#">submenu 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Nav 2</a></li>
-          <li><a href="#">Nav 3</a></li>
-          <li><a href="#">Nav 4</a></li>
-          <li><a href="#">Nav 5</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
+        <?php 
+          $mmenuOptions = array( 
+              'theme_location' => 'cbv_main_menu', 
+              'menu_class' => 'clearfix reset-list',
+              'container' => '',
+              'container_class' => ''
+            );
+          wp_nav_menu( $mmenuOptions ); 
+        ?>
       </nav>
     </div>
     <div class="xs-mbl-btm">
-      <div class="hdr-details ">
+      <div class="hdr-details  ">
+        <?php if( !empty($email) ): ?>
         <div class="hdr-mail hdr-details-col">
-          <a href="mailto:admin@liveplaywork.com.au">
+          <a href="mailto:<?php echo $email; ?>">
             <i><svg class="mail-icon" width="27.682" height="17.411" viewBox="0 0 27.682 17.411" fill="#fb5e24">
               <use xlink:href="#mail-icon"></use></svg>
             </i>
           </a>
         </div>
+        <?php 
+          endif;
+          if( !empty($telephone) ):
+        ?>
         <div class="hdr-tel hdr-details-col">
-          <a href="tel:1300459308">
-            <span>1300 459 308</span>
+          <a href="tel:<?php echo phone_preg($telephone); ?>">
+            <?php printf('<span>%s</span>', $telephone); ?>
             <i><svg class="phone-icon" width="18.899" height="21.32" viewBox="0 0 18.899 21.32" fill="#fb5e24">
               <use xlink:href="#phone-icon"></use></svg>
             </i>
           </a>
         </div>
+        <?php endif; ?>
       </div>
+
+      <?php if( $sinfo ): ?>
       <div class="xs-mbl-socials">
         <ul class="reset-list">
+          <?php 
+            if( !empty($sinfo['instagram_url']) ): 
+          ?>
           <li>
-            <a target="_blank" href="#">
+            <a target="_blank" href="<?php echo $sinfo['instagram_url']; ?>">
               <i>
                 <svg class="instagram-svg" width="21.5" height="21.5" viewBox="0 0 21.5 21.5" fill="#FB5E24">
                   <use xlink:href="#instagram-svg"></use> 
@@ -188,8 +202,11 @@
               </i>
             </a>
           </li>
+          <?php endif; 
+            if( !empty($sinfo['facebook_url']) ): 
+          ?>
           <li>
-            <a target="_blank" href="#">
+            <a target="_blank" href="<?php echo $sinfo['facebook_url']; ?>">
               <i>
                 <svg class="facebook-svg-icon" width="11.419" height="21.32" viewBox="0 0 11.419 21.32" fill="#FB5E24">
                   <use xlink:href="#facebook-svg-icon"></use> 
@@ -197,8 +214,11 @@
               </i>
             </a>
           </li>
+          <?php endif; 
+            if( !empty($sinfo['youtube_url']) ): 
+          ?>
           <li>
-            <a target="_blank" href="#">
+            <a target="_blank" href="<?php echo $sinfo['youtube_url']; ?>">
               <i>
                 <svg class="youtube-svg" width="29.007" height="20.68" viewBox="0 0 29.007 20.68" fill="#FB5E24">
                   <use xlink:href="#youtube-svg"></use> 
@@ -206,7 +226,9 @@
               </i>
             </a>
           </li>
+          <?php endif; ?>
         </ul>
       </div>
+      <?php endif; ?>
     </div>
   </div>
