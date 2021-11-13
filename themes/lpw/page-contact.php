@@ -2,6 +2,7 @@
 /*Template Name: Contact*/
 get_header();
 $thisID = get_the_ID();
+$intro = get_field('intro', $thisID); 
 ?>
 <?php get_template_part('templates/page', 'banner'); ?>
 <?php get_template_part('templates/breadcrumbs'); ?>
@@ -13,34 +14,17 @@ $thisID = get_the_ID();
       <div class="contact-form-block clearfix">
         <div class="contact-form-dsc-wrp">
           <div class="sec-entry-header">
-            <h2 class="sec-entry-header-title fl-h6">ABOUT OUR COMMUNITY & SERVICES</h2>
-            <p>Have we contacted you? Return message now! <a href="mailto:e:admin@liveplaywork.com.au">e: admin@liveplaywork.com.au</a></p>
+            <?php if( !empty($intro['title']) ) printf('<h2 class="sec-entry-header-title fl-h6">%s</h2>', $intro['title']); ?>
+            <p>
+            <?php 
+              if( !empty($intro['description']) ) printf('%s', $intro['description']); 
+              $email = get_field('emailaddres', 'options');
+              if( !empty($email) ) printf('<a href="mailto:%s"> e: %s</a>', $email, $email);
+            ?>
+            </p>
           </div>
           <div class="contact-form-wrp clearfix">
-            <div class="wpforms-container">
-              <div class="wpforms-form needs-validation novalidate">
-                <div class="wpforms-field-container">
-                  <div class="wpforms-field">
-                    <input type="text" name="name" placeholder="Your name" required="">
-                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                  </div>
-                  <div class="wpforms-field">
-                    <input type="email" name="email" placeholder="Your email" required="">
-                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                  </div>
-                  <div class="wpforms-field">
-                    <input type="text" name="text" placeholder="Contact number" required="">
-                    <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                  </div>
-                  <div class="wpforms-field wpforms-field-textarea">
-                    <textarea name="message" placeholder="Write your message here"></textarea>
-                  </div>
-                </div>
-                <div class="wpforms-submit-container">
-                  <button type="submit" name="submit" class="wpforms-submit">send message</button>
-                </div>
-              </div>
-            </div>
+            <?php if( !empty($intro['shortcode']) ) echo do_shortcode($intro['shortcode']); ?>
           </div>
         </div>
       </div>

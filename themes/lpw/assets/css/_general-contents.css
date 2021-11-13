@@ -698,7 +698,16 @@ Gallery design
 	background: #000;
 	border-color: #000;
 }
-
+.horizontal_line::after{
+	content: "";
+    position: absolute;
+    height: 1px;    
+    top: 50%;
+    transform: translateY(-50%);
+    left: 23px;
+    right: 23px;
+    background: #fff;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
