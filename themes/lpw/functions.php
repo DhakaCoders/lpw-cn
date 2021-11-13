@@ -36,7 +36,7 @@ if( !function_exists('cbv_theme_setup') ){
 
         register_nav_menus( array(
             'cbv_main_menu' => __( 'Main Menu', 'lpw' ),
-            'cbv_copyright_menu' => __( 'Copyright', 'mbc' ),
+            'cbv_copyright_menu' => __( 'Copyright', 'lpw' ),
         ) );
 
     }
