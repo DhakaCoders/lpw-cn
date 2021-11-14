@@ -231,7 +231,7 @@ ul li::before {
 	position: absolute;
 	left: 0;
 	top: 0;
-	margin-top: 10px;
+	margin-top: 7px;
 	background: url('../images/mbc-rgt-red-arrow.png');
 	background-repeat: no-repeat;
 	width: 9px;
@@ -267,7 +267,7 @@ ol li::before {
 	position: absolute;
 	left: 0;
 	top: 0;
-	margin-top: 5px;
+	margin-top: 1px;
 	font-family: 'Museo-Sans-500';
 }
 
