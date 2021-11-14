@@ -711,6 +711,10 @@ Gallery design
     right: 23px;
     background: #fff;
 }
+.mbc-des-accordion-sec{
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
@@ -856,6 +860,10 @@ Gallery design
 	.mbc-team-slider-btn-ctlr{
 		padding-top: 40px;
 	}
+	.mbc-des-accordion-sec{
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
 	
 }
 
@@ -978,6 +986,10 @@ Gallery design
 	.mbc-btn ul li{
 		max-width: 25%;
 	}
+	.mbc-des-accordion-sec{
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 }
 @media(max-width: 991px){
 	.mbc-text-slider-ctlr {
@@ -1071,6 +1083,10 @@ Gallery design
 	}
 	.mbc-team-slider-btn-ctlr{
 		padding-top: 20px;
+	}
+	.mbc-des-accordion-sec{
+		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 
 }
@@ -1179,6 +1195,10 @@ Gallery design
 	.mbc-fullwidth-txt-module a{
 		margin-top: 20px;
 	}
+	.mbc-des-accordion-sec{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 
 }
 @media(max-width: 639px){
@@ -1261,6 +1281,10 @@ Gallery design
 	.pd-top{
 		padding-top: 50px;
 	}
+	.mbc-des-accordion-sec{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 }
 
 @media(max-width: 479px){
@@ -1288,6 +1312,10 @@ Gallery design
 	}
 	.mbc-btn ul li{
 		max-width: 100%;
+	}
+	.mbc-des-accordion-sec{
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
