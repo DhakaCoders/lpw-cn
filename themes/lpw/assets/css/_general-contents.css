@@ -562,6 +562,7 @@ Gallery design
     background: #fb5e24;
     padding: 13px 15px;
     text-align: center;
+    margin: 0 auto;
 }
 .btn-bg-transparent a{
 	margin-bottom: 0;
