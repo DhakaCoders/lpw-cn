@@ -329,7 +329,7 @@ $fc_title = get_sub_field('fc_title');
 $fc_text = get_sub_field('fc_text');
 $accordions = get_sub_field('accordions');
 ?>
-<section class="mbc-des-accordion-sec mbc-grids-sec-cntlr mbc-des-accordion-gray-bg">
+<section class="mbc-des-accordion-sec mbc-grids-sec-cntlr">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -350,6 +350,48 @@ $accordions = get_sub_field('accordions');
                 <div class="mbc-accordion-menu">
                   <div class="mbc-accordion-hdr">
                   <?php if( !empty($accordion['title']) ) printf('<h3 class="mbc-accordion-title fl-h6">%s</h3>', $accordion['title']); ?>
+                  </div>
+                  <div class="mbc-accordion-des">
+                    <?php if( !empty($accordion['description']) ) echo wpautop($accordion['description']);?>
+                  </div>
+                </div>
+                <?php endforeach; ?>
+              </div>
+            </div>
+            <?php endif; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php 
+}elseif( get_row_layout() == 'accordion_design_2' ){ 
+$fc_title = get_sub_field('fc_title');
+$fc_text = get_sub_field('fc_text');
+$accordions = get_sub_field('accordions');
+?>
+<section class="mbc-des-accordion-sec mbc-grids-sec-cntlr mbc-des-accordion-gray-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mbc-des-accordion-sec-inr">
+          <div class="mbc-columns mbc-columns-2L">
+            <div class="mbc-grid-item">
+              <div class="mbc-grid-item-inr">
+                <div class="mbc-grids-col-entry-hdr">
+                  <?php if( !empty($fc_title) ) printf('<h2 class="fl-h2 mbc-grids-col-entry-hdr-title">%s</h2>', $fc_title); ?>
+                </div>
+                <?php if( !empty($fc_text) ) echo wpautop($fc_text);?>
+              </div>
+            </div>
+            <?php if( $accordions ): ?>
+            <div class="mbc-grid-item">
+              <div class="mbc-grid-item-inr">
+                <?php foreach( $accordions as $accordion ): ?>
+                <div class="mbc-accordion-menu">
+                  <div class="mbc-accordion-hdr">
+                    <?php if( !empty($accordion['title']) ) printf('<h3 class="mbc-accordion-title fl-h6">%s</h3>', $accordion['title']); ?>
                   </div>
                   <div class="mbc-accordion-des">
                     <?php if( !empty($accordion['description']) ) echo wpautop($accordion['description']);?>
@@ -390,7 +432,7 @@ $fclink = get_sub_field('link');
               <div class="mbc-grid-item">
                 <div class="mbc-grid-item-inr">
                   <div class="mbc-grids-col-entry-hdr">
-                  <?php if( !empty($fc_title) ) printf('<h2 classfl-h6 mbc-grids-col-entry-hdr-title">%s</h2>', $fc_title); ?>
+                  <?php if( !empty($fc_title) ) printf('<h2 class="fl-h6 mbc-grids-col-entry-hdr-title">%s</h2>', $fc_title); ?>
                   </div>
                   <?php 
                     if( !empty($fc_text) ) echo wpautop($fc_text);
@@ -483,7 +525,7 @@ $slides = get_sub_field('slide');
 <?php 
 }elseif( get_row_layout() == 'partners' ){ 
 $fc_title = get_sub_field('fc_title');
-echo $fcsubtitle = get_sub_field('fc_subtitle');
+$fcsubtitle = get_sub_field('fc_subtitle');
 $logos = get_sub_field('logos');
 ?>
 <section class="mbc-client-sec">
@@ -635,6 +677,55 @@ $lightbox = get_sub_field('display_lightbox');
     </div>
   </div>
 </section>
+<?php }elseif( get_row_layout() == 'fc_heading' ){
+$fc_text = get_sub_field('fc_text');
+$bg_color = get_sub_field('bg_color');
+$text_color = get_sub_field('text_color');
+$hd_type = get_sub_field('hd_type');
+?> 
+<div class="mbc-content-des-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mbc-content-sec-inr">
+          <div class="mbc-content-des">
+            <?php
+              $style = ''; 
+              if( !empty($text_color) && !empty($bg_color) ){
+                $style = 'background:'.$bg_color.';color:'.$text_color.';padding:5px 12px';
+              }elseif( empty($text_color) && !empty($bg_color) ){
+                $style = 'background:'.$bg_color.';padding:5px 12px';
+              }elseif( !empty($text_color) && empty($bg_color) ){
+                $style = 'color:'.$text_color;
+              }
+              
+              if( $hd_type == 'h1' ){
+                if( !empty($fc_text) ) printf('<h1><span style="%s">%s</span></h1>',$style, $fc_text );
+                echo '<h1><span></span></h1>';
+              }elseif( $hd_type == 'h3' ){
+                if( !empty($fc_text) ) printf('<h3><span style="%s">%s</span></h1>',$style, $fc_text );
+                echo '<h1><span></span></h3>';
+              }elseif( $hd_type == 'h4' ){
+                if( !empty($fc_text) ) printf('<h4><span style="%s">%s</span></h1>',$style, $fc_text );
+                echo '<h1><span></span></h4>';
+              }elseif( $hd_type == 'h5' ){
+                if( !empty($fc_text) ) printf('<h5><span style="%s">%s</span></h1>',$style, $fc_text );
+                echo '<h1><span></span></h5>';
+              }elseif( $hd_type == 'h6' ){
+                if( !empty($fc_text) ) printf('<h5><span style="%s">%s</span></h1>',$style, $fc_text );
+                echo '<h1><span></span></h6>';
+              }else{
+                if( !empty($fc_text) ) printf('<h2><span style="%s">%s</span></h1>',$style, $fc_text );
+                echo '<h1><span></span></h2>';
+              }
+
+            ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <?php }elseif( get_row_layout() == 'fclink' ){
 $fc_knop = get_sub_field('link');
 $bg_kleur = get_sub_field('fcbg');
