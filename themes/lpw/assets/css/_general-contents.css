@@ -1190,7 +1190,7 @@ Gallery design
 		padding-top: 30px;
 	}
 	.mbc-btn ul li{
-		max-width: 33.333%;
+		max-width: 50%;
 	}
 	.mbc-fullwidth-txt-module a{
 		margin-top: 20px;
@@ -1198,6 +1198,10 @@ Gallery design
 	.mbc-des-accordion-sec{
 		padding-top: 60px;
 		padding-bottom: 60px;
+	}
+	.mbc-content-sec {
+	    padding-top: 60px;
+	    padding-bottom: 50px;
 	}
 
 }
