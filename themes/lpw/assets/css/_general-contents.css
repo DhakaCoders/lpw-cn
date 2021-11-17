@@ -567,6 +567,9 @@ Gallery design
 .btn-bg-transparent a{
 	margin-bottom: 0;
 }
+.btn-bg-transparent a:hover{
+	color: #fb5e24!important;
+}
 .mbc-btn ul{
 	display: flex;
 	align-items: center;
