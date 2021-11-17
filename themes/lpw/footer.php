@@ -7,6 +7,7 @@
   }
   $telephone = get_field('telephone', 'options');
   $email = get_field('emailaddres', 'options');
+  $fttext = get_field('fttext', 'options');
   $address = get_field('address', 'options');
   $gurl = get_field('gurl', 'options');
   $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
@@ -38,7 +39,7 @@
               <div class="ftr-top-details">
                 <?php 
                   if( !empty($telephone) ) printf('<div class="ftr-tel"><a href="tel:%s">%s</a></div>', phone_preg($telephone), $telephone); 
-                  if( !empty($email) ) printf('<div class="ftr-email"><h6 class="ftr-email-title">Lorem ipsum</h6> <a href="mailto:%s">%s</a></div>', $email, $email);
+                  if( !empty($email) ) printf('<div class="ftr-email"><h6 class="ftr-email-title">%s</h6> <a href="mailto:%s">%s</a></div>', $fttext, $email, $email);
                   if( !empty($address) ) printf(' <div class="ftr-addr"><a href="%s" target="_blank">%s</a></div>', $gmaplink, $address); 
                 ?>
               </div>

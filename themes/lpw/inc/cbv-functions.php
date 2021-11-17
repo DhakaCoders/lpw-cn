@@ -211,59 +211,6 @@ function banner_placeholder($format = 'src'){
   return '';
 
 }
-
-function news_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['news'])? cbv_get_image_src($placehoder['news']):'';
-      }else{
-        $placeholder = !empty($placehoder['news'])? cbv_get_image_tag($placehoder['news']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
-function services_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['services'])? cbv_get_image_src($placehoder['services']):'';
-      }else{
-        $placeholder = !empty($placehoder['services'])? cbv_get_image_tag($placehoder['services']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
-function career_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['career'])? cbv_get_image_src($placehoder['career']):'';
-      }else{
-        $placeholder = !empty($placehoder['career'])? cbv_get_image_tag($placehoder['career']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
-function case_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['case_studies'])? cbv_get_image_src($placehoder['case_studies']):'';
-      }else{
-        $placeholder = !empty($placehoder['case_studies'])? cbv_get_image_tag($placehoder['case_studies']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
 function bv_get_current_year(){
     return date('Y');
 }
@@ -271,7 +218,7 @@ add_shortcode( 'cyear', 'bv_get_current_year' );
 
 function cbv_get_excerpt(){
   global $post;
-  $link = '<a href="'. get_permalink($post->ID) . '">'.__(' ....more', 'postat').'</a>';
+  $link = '<a href="'. get_permalink($post->ID) . '">'.__(' ....more', 'lpw').'</a>';
   $excerpt = explode(' ', get_the_excerpt());
   //array_pop($excerpt);
   $excerpt = implode(" ",$excerpt);

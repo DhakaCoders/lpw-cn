@@ -1,15 +1,15 @@
 <?php
 function cbv_breadcrumbs() {
   /* === OPTIONS === */
-  $text['home']     = __('Home', 'mbc'); // text for the 'Home' link
-  $text['blog']     = __('Blog', 'mbc'); // text for the 'Home' link
-  $text['category'] = __('Archive by Category "%s"', 'mbc'); // text for a category page
-  $text['search']   = __('Search Results for "%s"', 'mbc'); // text for a search results page
-  $text['tag']      = __('Posts Tagged "%s"', 'mbc'); // text for a tag page
-  $text['author']   = __('Articles Posted by %s', 'mbc'); // text for an author page
-  $text['404']      = __('Error 404', 'mbc'); // text for the 404 page
-  $text['page']     = __('Page %s', 'mbc'); // text 'Page N'
-  $text['cpage']    = __('Comment Page %s', 'mbc'); // text 'Comment Page N'
+  $text['home']     = __('Home', 'lpw'); // text for the 'Home' link
+  $text['blog']     = __('Blog', 'lpw'); // text for the 'Home' link
+  $text['category'] = __('Archive by Category "%s"', 'lpw'); // text for a category page
+  $text['search']   = __('Search Results for "%s"', 'lpw'); // text for a search results page
+  $text['tag']      = __('Posts Tagged "%s"', 'lpw'); // text for a tag page
+  $text['author']   = __('Articles Posted by %s', 'lpw'); // text for an author page
+  $text['404']      = __('Error 404', 'lpw'); // text for the 404 page
+  $text['page']     = __('Page %s', 'lpw'); // text 'Page N'
+  $text['cpage']    = __('Comment Page %s', 'lpw'); // text 'Comment Page N'
 
   $wrap_before    = '<ul class="reset-list">'; // the opening wrapper tag
   $wrap_after     = '</ul>'; // the closing wrapper tag
